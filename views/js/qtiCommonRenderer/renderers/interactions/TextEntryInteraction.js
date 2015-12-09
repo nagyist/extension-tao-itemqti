@@ -149,7 +149,7 @@ define([
             if(baseType === 'integer'){
                 value = parseInt($el.val(), numericBase);
             }else if(baseType === 'float'){
-                value = parseFloat($el.val());
+                value = parseFloat($el.val().replace(/,/g, ''));
             }else if(baseType === 'string'){
                 value = $el.val();
             }
