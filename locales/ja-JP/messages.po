@@ -266,6 +266,9 @@ msgstr "文字ブロックは、テキストや画像などのコンテンツを
 msgid "Block height (%)"
 msgstr "ブロック高さ (%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "枠の色"
 
@@ -1684,6 +1687,9 @@ msgstr "コンテナの高さを選択"
 msgid "Select height of text block base of container height"
 msgstr "テキストブロックの高さを選択"
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "結果変数の拡張解釈へのオプションリンクです。"
 
@@ -2295,4 +2301,3 @@ msgstr "少なくとも%sつ，最大%sつまで選べます"
 
 msgid "Your item has been saved"
 msgstr "アイテムが保存されました"
-

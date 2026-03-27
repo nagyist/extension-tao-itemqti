@@ -266,6 +266,9 @@ msgstr "Le bloc contient le contenu (stimulus) de l'item tel que du texte ou une
 msgid "Block height (%)"
 msgstr "Hauteur du bloc (%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Couleur de bordure"
 
@@ -1684,6 +1687,9 @@ msgstr "Sélectionner la hauteur de la base de passage de la hauteur du conteneu
 msgid "Select height of text block base of container height"
 msgstr "Sélectionner la hauteur de la base du bloc de texte de la hauteur du conteneur"
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "Sélectionnez si vous souhaitez que la déclaration de résultat soit traitée par un système externe ou un évaluateur humain. C'est typiquement le cas pour les questions demandant aux candidats de rédiger une dissertation"
 
@@ -2295,4 +2301,3 @@ msgstr "Vous devez sélectionner les choix %s à %s."
 
 msgid "Your item has been saved"
 msgstr "Votre item a été enregistré."
-

@@ -259,6 +259,9 @@ msgstr "Í blokkinni er efnið (hvati) atriðisins svo sem texti eða mynd. Henn
 msgid "Block height (%)"
 msgstr ""
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Litur ramma"
 
@@ -1661,6 +1664,9 @@ msgstr ""
 msgid "Select height of text block base of container height"
 msgstr ""
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr ""
 
@@ -2269,4 +2275,3 @@ msgstr ""
 
 msgid "Your item has been saved"
 msgstr "Atriðið  þitt hefur verið vistað"
-

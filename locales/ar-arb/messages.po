@@ -259,6 +259,9 @@ msgstr "يحتوي الحظر على محتوى (التحفيز) الخاص با
 msgid "Block height (%)"
 msgstr "ارتفاع الكتلة (٪)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "لون الحدود"
 
@@ -1662,6 +1665,9 @@ msgstr ""
 msgid "Select height of text block base of container height"
 msgstr ""
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "حدد ما إذا كنت تريد معالجة إعلان النتيجة بواسطة نظام خارجي أو مسجل بشري. هذا هو الحال عادةً بالنسبة للبنود التي تطلب من المرشحين كتابة مقال."
 
@@ -2270,4 +2276,3 @@ msgstr ""
 
 msgid "Your item has been saved"
 msgstr "تم حفظ البند الخاص بك"
-
