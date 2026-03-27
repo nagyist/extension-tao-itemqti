@@ -266,6 +266,9 @@ msgstr "Blok bevat de inhoud (stimulus) van het item zoals tekst of een afbeeldi
 msgid "Block height (%)"
 msgstr "Blok hoogte (%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Randkleur"
 
@@ -1684,6 +1687,9 @@ msgstr "Selecteer de hoogte van de doorgangsbasis van container hoogte"
 msgid "Select height of text block base of container height"
 msgstr "Selecteer hoogte van tekstblok basis van container hoogte"
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "Selecteer als u wilt dat de resultaatverklaring wordt verwerkt door een extern systeem of menselijke scorer. Dit is meestal het geval voor items die de kandidaten vragen een essay te schrijven."
 
@@ -2295,4 +2301,3 @@ msgstr "U moet %s naar %s keuzes selecteren."
 
 msgid "Your item has been saved"
 msgstr "Uw item is opgeslagen"
-

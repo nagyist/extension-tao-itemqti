@@ -266,6 +266,9 @@ msgstr "Tekstboksen inneholder stimuliet til oppgaven, for eksempel tekst eller 
 msgid "Block height (%)"
 msgstr "Skrollhøyde(%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Kantfarge"
 
@@ -1683,6 +1686,9 @@ msgstr ""
 msgid "Select height of text block base of container height"
 msgstr ""
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "Velg om oppgaven skal manuelt skåres i skåringsverktøyet eller sendes til plagiatkontroll. Du må legge til flere vurderingsalternativer dersom oppgaven både skal skåres manuelt og plagiatkontrolleres."
 
@@ -2294,4 +2300,3 @@ msgstr ""
 
 msgid "Your item has been saved"
 msgstr "Oppgaven din ble lagret"
-

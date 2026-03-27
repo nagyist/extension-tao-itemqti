@@ -266,6 +266,9 @@ msgstr "Block-ul contine continutul (stimulus) elementului cum ar fi text sau im
 msgid "Block height (%)"
 msgstr "Înălțimea blocului (%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Culoare chenar"
 
@@ -1684,6 +1687,9 @@ msgstr "Selectați înălțimea de trecere a înălțimii containerului"
 msgid "Select height of text block base of container height"
 msgstr "Selectați înălțimea blocurilor de text înălțimea containerului"
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "Selectați dacă doriți ca declarația rezultatului să fie procesată de un sistem extern sau un scor uman. Acesta este de obicei cazul elementelor care solicită candidaților să scrie un eseu."
 
@@ -2295,4 +2301,3 @@ msgstr "Trebuie să selectați din opțiunile %s la %s."
 
 msgid "Your item has been saved"
 msgstr "Articolul tău a fost salvat"
-
