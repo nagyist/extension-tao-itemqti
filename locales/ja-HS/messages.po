@@ -260,7 +260,7 @@ msgid "Block height (%)"
 msgstr ""
 
 msgid "Block width (%)"
-msgstr ""
+msgstr "ブロック幅 (%)"
 
 msgid "Border color"
 msgstr "枠の色"
@@ -1666,7 +1666,7 @@ msgid "Select height of text block base of container height"
 msgstr ""
 
 msgid "Select width of block based on container width"
-msgstr ""
+msgstr "コンテナの幅からブロックの幅を選択"
 
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr ""
