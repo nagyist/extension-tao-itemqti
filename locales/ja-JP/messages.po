@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-open-source\n"
-"PO-Revision-Date: 2026-03-05 09:17\n"
+"PO-Revision-Date: 2026-03-28 09:28\n"
 "Last-Translator: TAO Translation Team <translation@tao.lu>\n"
 "MIME-Version: 1.0\n"
 "Language: ja\n"
@@ -265,6 +265,9 @@ msgstr "文字ブロックは、テキストや画像などのコンテンツを
 
 msgid "Block height (%)"
 msgstr "ブロック高さ (%)"
+
+msgid "Block width (%)"
+msgstr "ブロック幅 (%)"
 
 msgid "Border color"
 msgstr "枠の色"
@@ -1683,6 +1686,9 @@ msgstr "コンテナの高さを選択"
 
 msgid "Select height of text block base of container height"
 msgstr "テキストブロックの高さを選択"
+
+msgid "Select width of block based on container width"
+msgstr "コンテナの幅からブロックの幅を選択"
 
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "結果変数の拡張解釈へのオプションリンクです。"
