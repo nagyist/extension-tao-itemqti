@@ -266,6 +266,9 @@ msgstr "Blok obsahuje obsah (stimul) položky, ako napríklad text alebo obrázo
 msgid "Block height (%)"
 msgstr "Výška bloku (%)"
 
+msgid "Block width (%)"
+msgstr ""
+
 msgid "Border color"
 msgstr "Farba okraja"
 
@@ -1684,6 +1687,9 @@ msgstr "Vyberte výšku základne prechodu pre výšku kontajnera"
 msgid "Select height of text block base of container height"
 msgstr "Vyberte výšku základne textového bloku výšky kontajnera"
 
+msgid "Select width of block based on container width"
+msgstr ""
+
 msgid "Select if you want the outcome declaration to be processed by an external system or human scorer. This is typically the case for items asking candidates to write an essay."
 msgstr "Vyberte, či chcete, aby vyhlásenie o výsledku spracoval externý systém alebo ľudský hodnotiteľ. Toto je zvyčajne prípad položiek, ktoré od kandidátov vyžadujú napísanie eseje."
 
@@ -2295,4 +2301,3 @@ msgstr "Musíte si vybrať z %s až %s možností."
 
 msgid "Your item has been saved"
 msgstr "Vaša položka bola uložená"
-
