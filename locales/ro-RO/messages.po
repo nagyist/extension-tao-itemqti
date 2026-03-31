@@ -2301,4 +2301,3 @@ msgstr "Trebuie să selectați din opțiunile %s la %s."
 
 msgid "Your item has been saved"
 msgstr "Articolul tău a fost salvat"
-

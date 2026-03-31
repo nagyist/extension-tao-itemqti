@@ -27,8 +27,10 @@ define([
     'taoQtiItem/qtiCreator/widgets/states/Correct',
     'taoQtiItem/qtiCommonRenderer/renderers/interactions/GraphicAssociateInteraction',
     'taoQtiItem/qtiCommonRenderer/helpers/instructions/instructionManager',
-    'taoQtiItem/qtiCommonRenderer/helpers/PciResponse'
-], function(_, __, stateFactory, Correct, commonRenderer, instructionMgr, PciResponse){
+    'taoQtiItem/qtiCommonRenderer/helpers/PciResponse',
+    'taoQtiItem/qtiCreator/widgets/interactions/graphicAssociateInteraction/helpers/arrowRendering',
+    'taoQtiItem/qtiCreator/widgets/interactions/graphicAssociateInteraction/helpers/arrowResponse'
+], function(_, __, stateFactory, Correct, commonRenderer, instructionMgr, PciResponse, arrowRenderingHelper, arrowResponseHelper){
 
     'use strict';
 
@@ -40,6 +42,14 @@ define([
         var interaction = widget.element;
         var response = interaction.getResponseDeclaration();
         var corrects  = _.values(response.getCorrect());
+        var isSanitizing = false;
+        var instructionMessage = __('Please set the correct associations by linking the choices.');
+        var instruction;
+
+        if (_.isFunction(widget._detachArrowReverseControl)) {
+            widget._detachArrowReverseControl();
+            widget._detachArrowReverseControl = null;
+        }
 
         commonRenderer.resetResponse(interaction);
         commonRenderer.destroy(interaction);
@@ -48,25 +58,50 @@ define([
             return;
         }
         
+        instructionMessage = arrowResponseHelper.getInstructionMessage(interaction, instructionMessage);
+
         //add a specific instruction
-        instructionMgr.appendInstruction(interaction, __('Please set the correct associations by linking the choices.'));
+        instruction = instructionMgr.appendInstruction(interaction, instructionMessage);
         
         //use the common Renderer
         commonRenderer.render.call(interaction.getRenderer(), interaction);
 
-        commonRenderer.setResponse(
-            interaction, 
-            PciResponse.serialize(_.invokeMap(corrects, String.prototype.split, ' '), interaction)
+        corrects = _.invokeMap(corrects, String.prototype.split, ' ');
+        corrects = arrowResponseHelper.sanitizePairs(interaction, corrects);
+        response.setCorrect(
+            _.map(corrects, function(pair){
+                return pair.join(' ');
+            })
         );
+        commonRenderer.setResponse(interaction, PciResponse.serialize(corrects, interaction));
+        arrowRenderingHelper.scheduleApply(interaction);
+
+  
 
         widget.$container.on('responseChange.qti-widget', function(e, data){
-           if(data.response && data.response.list){
+           var type = response.attr('cardinality') === 'single' ? 'base' : 'list';
+           var rawPairs;
+           if(isSanitizing){
+                return;
+           }
+           rawPairs = arrowResponseHelper.extractResponsePairs(data && data.response, type);
+           if(rawPairs !== null){
+                var sanitizedResponse = arrowResponseHelper.sanitizePairChange(interaction, rawPairs);
+                var pairs = sanitizedResponse.pairs;
+                if (sanitizedResponse.changed) {
+                    arrowResponseHelper.showInvalidDirectionWarning(instruction);
+                    isSanitizing = true;
+                    commonRenderer.resetResponse(interaction);
+                    commonRenderer.setResponse(interaction, PciResponse.serialize(pairs, interaction));
+                    isSanitizing = false;
+                }
                 response.setCorrect(
-                    _.map(data.response.list.pair, function(pair){
+                    _.map(pairs, function(pair){
                         return pair.join(' ');
                     })
-                ); 
+                );
            }
+            arrowRenderingHelper.scheduleApply(interaction);
         });
 
     }
@@ -84,7 +119,11 @@ define([
 
         //stop listening responses changes
         widget.$container.off('responseChange.qti-widget');
-        
+        if (_.isFunction(widget._detachArrowReverseControl)) {
+            widget._detachArrowReverseControl();
+            widget._detachArrowReverseControl = null;
+        }
+
         //destroy the common renderer
         commonRenderer.resetResponse(interaction); 
         commonRenderer.destroy(interaction); 

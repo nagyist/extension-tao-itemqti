@@ -2301,4 +2301,3 @@ msgstr "Musíte si vybrať z %s až %s možností."
 
 msgid "Your item has been saved"
 msgstr "Vaša položka bola uložená"
-

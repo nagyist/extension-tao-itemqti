@@ -2301,4 +2301,3 @@ msgstr "Sie müssen zwischen %s und %s auswählen."
 
 msgid "Your item has been saved"
 msgstr "Ihr Element wurde gespeichert"
-

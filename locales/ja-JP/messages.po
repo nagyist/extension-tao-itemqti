@@ -2301,4 +2301,3 @@ msgstr "少なくとも%sつ，最大%sつまで選べます"
 
 msgid "Your item has been saved"
 msgstr "アイテムが保存されました"
-

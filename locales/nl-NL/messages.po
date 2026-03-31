@@ -2301,4 +2301,3 @@ msgstr "U moet %s naar %s keuzes selecteren."
 
 msgid "Your item has been saved"
 msgstr "Uw item is opgeslagen"
-

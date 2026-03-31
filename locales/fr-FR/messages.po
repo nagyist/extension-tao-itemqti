@@ -2301,4 +2301,3 @@ msgstr "Vous devez sélectionner les choix %s à %s."
 
 msgid "Your item has been saved"
 msgstr "Votre item a été enregistré."
-

@@ -2301,4 +2301,3 @@ msgstr "%s és %s lehetőségek közül kell választanod."
 
 msgid "Your item has been saved"
 msgstr "Az elem mentésre került"
-
